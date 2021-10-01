@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Countdown Timer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="page-container">
+            <div id="countdown-container">
+                <div id="time-label" class="border-background">
+                    <div>Minutes</div>
+                    <div>Seconds</div>
+                </div>
+                <div id="time-container" class="border-background">
+                    <div contenteditable id="minutes">20</div>
+                    <div id="seperator">:</div>
+                    <div contenteditable id="seconds">00</div>
+                </div>
+            </div>
+            <div class="center-container">
+                <button id="toggle-timer" onClick="toggleTimer()">Start Timer</button>
+                <button id="start-sound" onClick="startSound()">Start Sound</button>
+                <button id="stop-sound" onClick="stopSound()">Stop Sound</button>
+            </div>
+            <script src="sound.js"></script>
+            <script src="script.js"></script>
+
+            <footer id="footer" class="border-background">
+                Photo by <a href="https://unsplash.com/@lucabravo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Luca Bravo</a> on <a href="https://unsplash.com/s/photos/forest?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </footer>
+        </div>
+    </body>
+</html>
